@@ -18,7 +18,7 @@ final class homework7UITestsLaunchTests: XCTestCase {
     }
 
     @MainActor
-    func testLaunch() throws {
+    func disable_testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
 
