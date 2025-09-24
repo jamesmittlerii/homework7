@@ -1,10 +1,14 @@
-//
-//  homework7App.swift
-//  homework7
-//
-//  Created by cisstudent on 9/23/25.
-//
+/**
+ 
+ * __Homework 7__
+ * Jim Mittler
+ * 23 September 2025
+ 
+ _Italic text_
+ __Bold text__
+ ~~Strikethrough text~~
 
+ */
 import SwiftUI
 
 @main
