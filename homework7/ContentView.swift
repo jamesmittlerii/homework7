@@ -38,7 +38,8 @@ struct ContentView: View {
                         Text("Bio:")
                             .fontWidth(.condensed)
                             .alignmentGuide(.oneThird) { d in d[VerticalAlignment.center] }
-                        Text("Retired handyman, studen and general mischief maker.")
+                        Text("Retired handyman, student and general mischief maker.").padding()
+                        Text("I enjoy wrenching on cars, fixing vacuum tube amplifiers and radios and noodling on guitar and bass.")
                     }
                 }
         
