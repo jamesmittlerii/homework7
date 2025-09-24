@@ -48,10 +48,12 @@ struct ContentView: View {
                         d[VerticalAlignment.center]
                     }
                 Text("Retired handyman, student and general mischief maker.")
+                    .textScale(.secondary)
+
                     .padding()
                 Text(
                     "I enjoy wrenching on cars, fixing vacuum tube amplifiers and radios and noodling on guitar and bass."
-                )
+                ).textScale(.secondary)
             }
         }
 
