@@ -55,15 +55,18 @@ struct ContentView: View {
             // we align using the "oneThird" structure we built
             HStack(alignment: .oneThird) {
                 VStack {
+                        
+                    Image("itsme")
+                        .imageScale(.large)
+                        .foregroundStyle(.tint)
+                        
+
                     Text("Hello my name is Jim.")
                         .fontWidth(.condensed)
                         .alignmentGuide(.oneThird) { d in
                             d[VerticalAlignment.top]
                         }
-                    Image("itsme")
-                        .imageScale(.large)
-                        .foregroundStyle(.tint)
-
+                    
                 }.if(showDebugBorders) { view in
                     view.border(Color.red)
                 }
