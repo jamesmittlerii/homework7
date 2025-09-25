@@ -59,13 +59,15 @@ struct ContentView: View {
                     Image("itsme")
                         .imageScale(.large)
                         .foregroundStyle(.tint)
-                        
+                        .overlay(showDebugBorders ? Rectangle().stroke(Color.black, lineWidth:1) : nil)
 
                     Text("Hello my name is Jim.")
+                        .overlay(showDebugBorders ? Rectangle().stroke(Color.black, lineWidth:1) : nil)
                         .fontWidth(.condensed)
                         .alignmentGuide(.oneThird) { d in
                             d[VerticalAlignment.top]
                         }
+                        
                     
                 }.if(showDebugBorders) { view in
                     view.border(Color.red)
@@ -77,15 +79,19 @@ struct ContentView: View {
                         .alignmentGuide(.oneThird) { d in
                             d[VerticalAlignment.top]
                         }
+                        .overlay(showDebugBorders ? Rectangle().stroke(Color.black, lineWidth:1) : nil)
+                        
                     Text(
                         "Retired handyman, student and general mischief maker."
                     )
+                    .overlay(showDebugBorders ? Rectangle().stroke(Color.black, lineWidth:1) : nil)
                     .textScale(.secondary)
 
                     .padding()
                     Text(
                         "I enjoy wrenching on cars, fixing vacuum tube amplifiers and radios and noodling on guitar and bass."
                     ).textScale(.secondary)
+                        .overlay(showDebugBorders ? Rectangle().stroke(Color.black, lineWidth:1) : nil)
                 }.if(showDebugBorders) { view in
                     view.border(Color.red)
                 }
